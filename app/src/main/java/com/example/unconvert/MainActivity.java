@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 import android.widget.Button;
-import android.widget.TextView;100
+import android.widget.TextView;
 import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
@@ -23,12 +23,12 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
         button = findViewById(R.id.button);
-        textView4 =findViewById(R.id.textView4);
-        editTextText=findViewById(R.id.editTextText);
+        textView4 = findViewById(R.id.textView4);
+        editTextText = findViewById(R.id.editTextText);
         button.setOnClickListener(new View.OnClickListener(){
                    @Override
                    public void onClick(View view){
-                       Toast.makeText(MainActivity.this, "Input accept ", Toast.LENGTH_SHORT).show();
+                       Toast.makeText(MainActivity.this, "Than for using this app ", Toast.LENGTH_SHORT).show();
                        String s = editTextText.getText().toString();
                        int kg = Integer.parseInt(s);
                        double pound =2.205 * kg;
@@ -37,6 +37,14 @@ public class MainActivity extends AppCompatActivity {
 
                    }
          });
+
+//        public void calculate(View view){
+//            String s = editTextText.getText().toString();
+//            int kg = Integer.parseInt(s);
+//            double pound =2.205 * kg;
+//            textView4.setText("The corresponding value in pound is " + pound);
+//
+//        }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
