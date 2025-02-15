@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ActivityLayouts</string>
+    <string name="ironman" translatable="false">Iron Man</string>
+    <string name="ironman1" translatable="false">Iron Man Image 1</string>
+    <string name="ironman2" translatable="false">Iron Man Image 2</string>
+
+</resources>
+
+
